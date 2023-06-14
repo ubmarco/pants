@@ -12,7 +12,7 @@
   clippy::unseparated_literal_suffix,
   clippy::used_underscore_binding
 )]
-// It is often more clear to show that nothing is being moved.
+// It is often clearer to show that nothing is being moved.
 #![allow(clippy::match_ref_pats)]
 // Subjective style.
 #![allow(

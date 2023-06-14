@@ -11,7 +11,7 @@ The binary will be `dist/pants/aarch64-apple-darwin/debug/install/pants` -- this
 # Code signing errors?
 
 
-Obtain a self-signed certificate using info at at https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html
+Obtain a self-signed certificate using info at https://developer.apple.com/library/archive/documentation/Security/Conceptual/CodeSigningGuide/Procedures/Procedures.html
 
 I've called mine "pyox-test".
 

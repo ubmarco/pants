@@ -148,7 +148,7 @@ Tagging images
 
 When Docker builds images, it can tag them with a set of tags. Pants will apply the tags listed in
 the `image_tags` field of `docker_image`, and any additional tags if defined from the registry
-configuration (see [Configuring registries](doc:tagging-docker-images#configuring-registries).
+configuration (see [Configuring registries](doc:tagging-docker-images#configuring-registries)).
 
 (Note that the field is named `image_tags` and not just `tags`, because Pants has [its own tags
 concept](doc:reference-target#codetagscode), which is unrelated.)

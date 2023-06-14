@@ -7,7 +7,7 @@ createdAt: "2021-12-10T19:04:25.950Z"
 Press
 -----
 
-- **InfoWorld**, Matthew Tyson, "_[A brief intro to the Pants build system](https://www.infoworld.com/article/3650508/a-brief-intro-to-the-pants-build-system.html)_," February 17,2022
+- **InfoWorld**, Matthew Tyson, "_[A brief intro to the Pants build system](https://www.infoworld.com/article/3650508/a-brief-intro-to-the-pants-build-system.html)_," February 17, 2022
 
 - **IT Technology Series**, "_[New Preview Release Version of Pants Adds Support for Java, Scala, and Go](https://itechnologyseries.com/security/toolchain-releases-significant-update-to-the-pants-open-source-build-system/)_," December 6, 2021
 
