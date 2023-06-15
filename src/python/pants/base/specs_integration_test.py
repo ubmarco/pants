@@ -123,7 +123,7 @@ def test_sibling_addresses() -> None:
 
 @skip_unless_python39_present
 def test_descendent_addresses() -> None:
-    """Semantics are the same as sibling addreses, only recursive."""
+    """Semantics are the same as sibling addresses, only recursive."""
     with setup_tmpdir(SOURCES) as tmpdir:
         assert run(["list", f"{tmpdir}/py::"]).stdout.splitlines() == [
             f"{tmpdir}/py:bin",
@@ -148,7 +148,7 @@ def test_file_arg() -> None:
     when possible (regardless of project introspection vs. "build" goal).
 
     Also, check that we support 'secondary ownership', e.g. a `pex_binary` being associated with
-    the the file `app.py` even though it does not have a `sources` field.
+     the file `app.py` even though it does not have a `sources` field.
     """
     with setup_tmpdir(SOURCES) as tmpdir:
         assert run(

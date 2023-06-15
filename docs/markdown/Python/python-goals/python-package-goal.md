@@ -23,9 +23,9 @@ You can run `pants package ::` to build all artifacts in your project. Pants wil
 > 
 > See [test](doc:python-test-goal) for more information.
 
-> 👍 Streamling Docker builds
+> 👍 Streamline Docker builds
 > 
-> Check out our blog [Streamling Docker Builds](https://blog.pantsbuild.org/pants-pex-and-docker/) to read about how you can combine these `package` formats with Pants's Docker support. Also see our [Docker docs](doc:docker)
+> Check out our blog [Streamline Docker Builds](https://blog.pantsbuild.org/pants-pex-and-docker/) to read about how you can combine these `package` formats with Pants's Docker support. Also see our [Docker docs](doc:docker)
 
 Creating a PEX file from a `pex_binary` target
 ----------------------------------------------

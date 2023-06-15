@@ -15,14 +15,14 @@ Motivation
 
 Helm's ultimate purpose is to simplify the deployment of Kubernetes resources and help in making these reproducible. However it is quite common to deploy the same software application into different kind of environments using slightly different configuration overrides.
 
-This hinders reproducibility since operators end up having a set of configuration files and additional shell scripts that ensure that the Helm command line usued to deploy a piece of software into a given environment is always the same.
+This hinders reproducibility since operators end up having a set of configuration files and additional shell scripts that ensure that the Helm command line used to deploy a piece of software into a given environment is always the same.
 
 Pants solves this problem by providing with the ability to manage the configuration files and the different parameters of a deployment as single unit such that a simple command line as `pants experimental-deploy ::` will always have the same effect on each of the deployments previously defined.
 
 Defining Helm deployments
 -------------------------
 
-Helm deployments are defined using the `helm_deployment` target which has a series of fields that can be used to guarantee the reproducibility of the given deployment. `helm_deployment` targets need to be added by hand as there is no deterministic way of instrospecting your repository to find sources that are specific to Helm:
+Helm deployments are defined using the `helm_deployment` target which has a series of fields that can be used to guarantee the reproducibility of the given deployment. `helm_deployment` targets need to be added by hand as there is no deterministic way of introspecting your repository to find sources that are specific to Helm:
 
 ```python src/chart/BUILD
 helm_chart()
@@ -80,7 +80,7 @@ There are quite a few things to notice in the previous example:
 * One of those value files (`common-values.yaml`) provides with default values that are common to all deployments.
 * Each deployment uses an additional `xxx-override.yaml` file with values that are specific to the given deployment.
 
-The `helm_deployment` target has many additional fields including the target kubernetes namespace, adding inline override values (similar to using helm's `--set` arg) and many others. Please run `pants help helm_deployment` to see all the posibilities.
+The `helm_deployment` target has many additional fields including the target kubernetes namespace, adding inline override values (similar to using helm's `--set` arg) and many others. Please run `pants help helm_deployment` to see all the possibilities.
 
 Dependencies with `docker_image` targets
 ----------------------------------------
@@ -235,8 +235,8 @@ DEPLOY_TIME=$(date) pants experimental-deploy src/deployment:dev
 
 > 🚧 Ensuring repeatable deployments
 > 
-> You should always favor using static values (or value files) VS dynamic values in your deployments. Using interpolated environment variables in your deployments can render your deployments non-repetable anymore if those values can affect the behaviour of the system deployed, or what gets deployed (i.e. Docker image addresses).
-> Dynamic values are supported to give the option of passing some info or metadata to the software being deployed (i.e. deploy time, commit hash, etc) or some less harmful settings of a deployment (i.e. replica count. etc). Be careful when chossing the values that are going to be calculated dynamically.
+> You should always favor using static values (or value files) VS dynamic values in your deployments. Using interpolated environment variables in your deployments can render your deployments non-repeatable anymore if those values can affect the behaviour of the system deployed, or what gets deployed (i.e. Docker image addresses).
+> Dynamic values are supported to give the option of passing some info or metadata to the software being deployed (i.e. deploy time, commit hash, etc) or some less harmful settings of a deployment (i.e. replica count. etc). Be careful when choosing the values that are going to be calculated dynamically.
 
 Third party chart artifacts
 ---------------------------

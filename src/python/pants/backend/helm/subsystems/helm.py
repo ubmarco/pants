@@ -79,7 +79,7 @@ registries_help = help_text(
     A configured registry is marked as default either by setting `default = true`
     or with an alias of `"default"`.
 
-    Registries also participate in resolving third party Helm charts uplodaded to those registries.
+    Registries also participate in resolving third party Helm charts uploaded to those registries.
     """
 )
 
@@ -150,11 +150,11 @@ class HelmSubsystem(TemplatedExternalTool):
             Only a subset of Helm arguments are considered valid as passthrough arguments as most of them
             have equivalents in the form of fields of the different target types.
 
-            The list of valid arguments is as folows:
+            The list of valid arguments is as follows:
 
             {bullet_list([*_VALID_PASSTHROUGH_FLAGS, *_VALID_PASSTHROUGH_OPTS])}
 
-            Before attempting to use passthrough arguments, check the refence of each of the available target types
+            Before attempting to use passthrough arguments, check the reference of each of the available target types
             to see what fields are accepted in each of them.
             """
         ),

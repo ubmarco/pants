@@ -674,7 +674,7 @@ async def find_tar(platform: Platform) -> TarBinary:
 async def find_cat() -> CatBinary:
     request = BinaryPathRequest(binary_name="cat", search_path=SEARCH_PATHS)
     paths = await Get(BinaryPaths, BinaryPathRequest, request)
-    first_path = paths.first_path_or_raise(request, rationale="outputing content from files")
+    first_path = paths.first_path_or_raise(request, rationale="outputting content from files")
     return CatBinary(first_path.path, first_path.fingerprint)
 
 
@@ -740,7 +740,7 @@ async def find_open() -> OpenBinary:
 async def find_readlink() -> ReadlinkBinary:
     request = BinaryPathRequest(binary_name="readlink", search_path=SEARCH_PATHS)
     paths = await Get(BinaryPaths, BinaryPathRequest, request)
-    first_path = paths.first_path_or_raise(request, rationale="defererence symlinks")
+    first_path = paths.first_path_or_raise(request, rationale="dereference symlinks")
     return ReadlinkBinary(first_path.path, first_path.fingerprint)
 
 

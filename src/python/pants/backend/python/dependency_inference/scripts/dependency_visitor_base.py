@@ -13,7 +13,7 @@ import sys
 
 class FoundDependencies:
     def __init__(self):
-        # Each of these maps module_name to first lineno of occurance
+        # Each of these maps module_name to first lineno of occurrence
         # N.B. use `setdefault` when adding imports
         # (See `ParsedPythonImportInfo` in parse_python_imports.py for the delineation of
         #   weak/strong)

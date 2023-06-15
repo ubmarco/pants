@@ -56,7 +56,7 @@ Each repository is either a repository URL or, when prefixed with `@`, a referen
 Environment variables
 ---------------------
 
-Pants will pass certain configuration [environment variables](https://twine.readthedocs.io/en/latest/#environment-variables), through to Twine. If multiple repositories are involved in a single `publish` goal, you can distinguish them by adding an undersore and the repository name (upper-cased, and with hyphens replaced with underscores) as a suffix on the environment variable names:
+Pants will pass certain configuration [environment variables](https://twine.readthedocs.io/en/latest/#environment-variables), through to Twine. If multiple repositories are involved in a single `publish` goal, you can distinguish them by adding an underscore and the repository name (upper-cased, and with hyphens replaced with underscores) as a suffix on the environment variable names:
 
 - `TWINE_USERNAME` 
 - `TWINE_USERNAME_<repository>`

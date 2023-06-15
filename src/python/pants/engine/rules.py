@@ -380,7 +380,7 @@ def rule_helper(
 
     There are a few restrictions:
         1. Rule helpers must be "private". I.e. start with an underscore.
-        2. Rule hlpers must be `async`
+        2. Rule helpers must be `async`
         3. Rule helpers can't be rules
         4. Rule helpers must be accessed by attributes chained from a module variable (see below)
 

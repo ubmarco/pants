@@ -85,7 +85,7 @@ async def analyse_deployment(request: AnalyseHelmDeploymentRequest) -> HelmDeplo
         if isinstance(entry, FileEntry)
     )
 
-    # Build YAML index of Docker image refs for future processing during depedendecy inference or post-rendering.
+    # Build YAML index of Docker image refs for future processing during dependency inference or post-rendering.
     image_refs_index: MutableYamlIndex[str] = MutableYamlIndex()
     for manifest in parsed_manifests:
         for idx, path, image_ref in manifest.found_image_refs:
@@ -131,7 +131,7 @@ async def first_party_helm_deployment_mapping(
     )
     docker_target_addresses = {tgt.address.spec: tgt.address for tgt in docker_targets}
 
-    def lookup_docker_addreses(image_ref: str) -> tuple[str, Address] | None:
+    def lookup_docker_addresses(image_ref: str) -> tuple[str, Address] | None:
         addr = docker_target_addresses.get(image_ref, None)
         if addr:
             return image_ref, addr
@@ -140,7 +140,7 @@ async def first_party_helm_deployment_mapping(
     return FirstPartyHelmDeploymentMapping(
         address=request.field_set.address,
         indexed_docker_addresses=deployment_report.image_refs.transform_values(
-            lookup_docker_addreses
+            lookup_docker_addresses
         ),
     )
 
