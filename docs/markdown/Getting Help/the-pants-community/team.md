@@ -45,22 +45,22 @@ Pants open source project has had many team members in over a decade. The curren
 ### Contributors
 ------------
 
-| **NAME**                | **PROUDEST CONTRIBUTION**                                                                                |
-|-------------------------|----------------------------------------------------------------------------------------------------------|
-| **Chris Williams**      |                                                                                                          |
-| **Daniel Goldman**      | "Pants metaprogramming"                                                                                  |
-| **Darcy Shen**          | "Exploring the best Pants practice for Data and ML Engineering in Python and Scala"                      |
-| **Doron Somech**        | "Improving Scala dependency inference to support our codebase"                                           |
-| **Gautham Nair**        |                                                                                                          |
-| **Jonas Stendahl**      | "Adding formatting and linting support for Protobuf"                                                     |
-| **Marcelo Trylesinski** | "Improving onboarding experience"                                                                        |
-| **Nick Grisafi**        | "Participating in podcasts with maintainers (Eric and Josh) on developer experience and Pants!"          |
-| **Raúl Cuza**           | "The first time I was able to help someone else with pants on the Slack <https://pantsbuild.slack.com>." |
-| **Rhys Madigan**        | "Making unit test run times easier to understand"                                                        |
-| **Shantanu Kumar**      |                                                                                                          |
-| **Tansy Arron-Walker**  | "Writing my first task in the new engine was really exciting!"                                           |
-| **Thales Menato**       | "Making sure Pants can run even under heavily secured work environments!"                                |
-| **Tom Solberg**         | "Owning multiple OSS Pants plugins"                                                                      |
+| **NAME**                | **PROUDEST CONTRIBUTION**                                                                                         |
+|-------------------------|-------------------------------------------------------------------------------------------------------------------|
+| **Chris Williams**      |                                                                                                                   |
+| **Daniel Goldman**      | "Pants metaprogramming"                                                                                           |
+| **Darcy Shen**          | "Exploring the best Pants practice for Data and ML Engineering in Python and Scala"                               |
+| **Doron Somech**        | "Improving Scala dependency inference to support our codebase"                                                    |
+| **Gautham Nair**        | "A [tool](https://github.com/gauthamnair/pants-graph-view) to interactively visualize the runtime executed graph" |
+| **Jonas Stendahl**      | "Adding formatting and linting support for Protobuf"                                                              |
+| **Marcelo Trylesinski** | "Improving onboarding experience"                                                                                 |
+| **Nick Grisafi**        | "Participating in podcasts with maintainers (Eric and Josh) on developer experience and Pants!"                   |
+| **Raúl Cuza**           | "The first time I was able to help someone else with pants on [Slack](https://pantsbuild.slack.com)"              |
+| **Rhys Madigan**        | "Making unit test run times easier to understand"                                                                 |
+| **Shantanu Kumar**      |                                                                                                                   |
+| **Tansy Arron-Walker**  | "Writing my first task in the new engine was really exciting!"                                                    |
+| **Thales Menato**       | "Making sure Pants can run even under heavily secured work environments!"                                         |
+| **Tom Solberg**         | "Maintaining multiple open-source Pants plugins"                                                                  |
 
 ***
 
