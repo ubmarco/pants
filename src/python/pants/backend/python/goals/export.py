@@ -66,12 +66,12 @@ class ExportPluginOptions:
         help=softwrap(
             """\
             Export Python resolves using this format. Options are:
-              - `mutable_virtualenv`: Export a standalone mutable virtualenv that you can
+              - `mutable_virtualenv`: Export a standalone mutable virtualenv that you can \
                 further modify.
-              - `symlinked_immutable_virtualenv`: Export a symlink into a cached Python virtualenv.
-                This virtualenv will have no pip binary, and will be immutable. Any attempt to
-                modify it will corrupt the cache! It may, however, take significantly less time
-                to export than a standalone, mutable virtualenv.
+              - `symlinked_immutable_virtualenv`: Export a symlink into a cached Python virtualenv. \
+                This virtualenv will have no pip binary, and will be immutable. Any attempt to \
+                modify it will corrupt the cache! It may, however, take significantly less time \
+                to export than a standalone, mutable virtualenv. \
             """
         ),
     )
@@ -82,18 +82,18 @@ class ExportPluginOptions:
         help=softwrap(
             """
             When exporting a mutable virtualenv for a resolve, do PEP-660 editable installs
-            of all 'python_distribution' targets that own code in the exported resolve.
+            of all `python_distribution` targets that own code in the exported resolve.
 
-            If a resolve name is not in this list, 'python_distribution' targets will not
+            If a resolve name is not in this list, `python_distribution` targets will not
             be installed in the virtualenv. This defaults to an empty list for backwards
             compatibility and to prevent unnecessary work to generate and install the
             PEP-660 editable wheels.
 
-            This only applies when '[python].enable_resolves' is true and when exporting a
+            This only applies when `[python].enable_resolves` is true and when exporting a
             'mutable_virtualenv' ('symlinked_immutable_virtualenv' exports are not "full"
-            virtualenvs because they must not be edited, and do not include 'pip').
+            virtualenvs because they must not be edited, and do not include `pip`).
 
-            NOTE: If you are using legacy exports (not using the '--resolve' option), then
+            NOTE: If you are using legacy exports (not using the `--resolve` option), then
             this option has no effect. Legacy exports will not include any editable installs.
             """
         ),
