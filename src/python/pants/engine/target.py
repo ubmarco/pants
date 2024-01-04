@@ -1725,7 +1725,6 @@ class ScalarField(Generic[T], Field):
     expected_type_description: ClassVar[str]
     value: Optional[T]
     default: ClassVar[Optional[T]] = None  # type: ignore[misc]
-
     @classmethod
     def compute_value(cls, raw_value: Optional[Any], address: Address) -> Optional[T]:
         value_or_default = super().compute_value(raw_value, address)
@@ -1862,7 +1861,6 @@ class SequenceField(Generic[T], Field):
     expected_type_description: ClassVar[str]
     value: Optional[Tuple[T, ...]]
     default: ClassVar[Optional[Tuple[T, ...]]] = None  # type: ignore[misc]
-
     @classmethod
     def compute_value(
         cls, raw_value: Optional[Iterable[Any]], address: Address
@@ -2893,7 +2891,6 @@ class OverridesField(AsyncFieldMixin, Field):
     alias = "overrides"
     value: dict[tuple[str, ...], dict[str, Any]] | None
     default: ClassVar[None] = None  # A default does not make sense for this field.
-
     @classmethod
     def compute_value(
         cls,

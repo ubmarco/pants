@@ -29,7 +29,7 @@ class PartitionerType(Enum):
     """The plugin author has a rule to go from `RequestType.PartitionRequest` -> `Partitions`."""
 
     DEFAULT_SINGLE_PARTITION = "default_single_partition"
-    """Registers a partitioner which returns the inputs as a single partition
+    """Registers a partitioner which returns the inputs as a single partition.
 
     The returned partition will have no metadata.
     """

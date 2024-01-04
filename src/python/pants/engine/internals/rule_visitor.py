@@ -88,8 +88,9 @@ class _TypeStack:
 
 
 def _lookup_annotation(obj: Any, attr: str) -> Any:
-    """Get type associated with a particular attribute on object. This can get hairy, especially on
-    Python <3.10.
+    """Get type associated with a particular attribute on object.
+
+    This can get hairy, especially on Python <3.10.
 
     https://docs.python.org/3/howto/annotations.html#accessing-the-annotations-dict-of-an-object-in-python-3-9-and-older
     """

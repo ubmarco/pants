@@ -147,7 +147,7 @@ class Simplifier:
 
     # it's only rarely useful to show a chroot path to a user, hence they're stripped by default
     strip_chroot_path: bool = True
-    """remove all instances of the chroot tmpdir path"""
+    """Remove all instances of the chroot tmpdir path."""
     strip_formatting: bool = False
     """remove ANSI formatting commands (colors, bold, etc)"""
 
