@@ -3,8 +3,7 @@
 
 """Autoformatter for Python.
 
-See https://www.pantsbuild.org/docs/python-linters-and-formatters and
-https://github.com/google/yapf .
+See https://www.pantsbuild.org/docs/python-linters-and-formatters.
 """
 
 from pants.backend.python.lint.yapf import rules as yapf_rules

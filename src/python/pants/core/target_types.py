@@ -707,8 +707,7 @@ class TargetGeneratorSourcesHelperTarget(Target):
     target once per file, and add it as a dependency to every generated target so that `--changed-
     since` works properly.
 
-    See https://github.com/pantsbuild/pants/issues/13118 for discussion of why this is necessary and
-    alternatives considered.
+    See https://github.com/pantsbuild/pants/issues/13118alternatives considered.
     """
 
     alias = "_generator_sources_helper"
